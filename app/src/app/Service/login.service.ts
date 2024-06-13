@@ -13,7 +13,6 @@ export class LoginService {
     constructor(private httpClient: HttpClient) { }
 
     userLogin(user:User): Observable<Token> {
-      console.log(user);
       return this.httpClient.post<Token>("http://localhost:3000/auth/login",user)
     }
 

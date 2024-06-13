@@ -41,8 +41,9 @@ export class StudentAddComponent {
           title: "Good job!",
           text: "Student: "+students.name+", has been created successfully",
           icon: "success"
+        }).then(() => {
+          this.activeModal.close(this.studentForm.value);
         });
-        this.activeModal.close(this.studentForm.value);
       })
     }
   }

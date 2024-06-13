@@ -42,10 +42,6 @@ export class StudentListComponent implements OnInit {
     });
   }
 
-  addStudent(student: Student): void {
-    this.studentService.addStudent(student);
-    this.updateFilteredStudents();
-  }
 
   calculateAge(dob: Date): number {
     const birthDate = new Date(dob);
@@ -98,7 +94,13 @@ export class StudentListComponent implements OnInit {
   addNewStudent(): void {
     
       const modalRef = this.modalService.open(StudentAddComponent);
-      modalRef.componentInstance.name = 'World';
+      modalRef.result.then(
+        (result) => {
+          this.updateFilteredStudents();
+        },
+        () => {
+        }
+      )
     
   }
 
