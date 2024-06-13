@@ -37,7 +37,6 @@ export class StudentEditComponent {
   ngOnInit(): void {
     this.studentService.getStudentById(this.id).subscribe(student => {
       this.oldStudent=student;
-      console.log(this.oldStudent);
       this.studentForm = this.fb.group({
         name: [this.oldStudent.name, Validators.required],
         dob: [this.oldStudent.dob, Validators.required],

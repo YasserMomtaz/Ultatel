@@ -79,7 +79,6 @@ export class StudentListComponent implements OnInit {
   }
 
   editStudent(id:number): void {
-    console.log(id);
     const modalRefEdit = this.modalService.open(StudentEditComponent)
       modalRefEdit.componentInstance.id = id;
       modalRefEdit.result.then(
