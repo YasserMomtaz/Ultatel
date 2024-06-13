@@ -1,6 +1,6 @@
 # Ultatel Task
 
-This project was generated with [AngularCLI] , And [NestJs]
+This project was generated with [AngularCLI] For Front-End ,  [NestJs] For Back-End And MySql DataBase
 
 ## Runing FrontEnd Development server
 
@@ -143,5 +143,39 @@ $ npm run test:cov
 
 ## Technologies
 
+## NestJS Core Modules
+import { Module } from '@nestjs/common';
+Purpose: The @Module decorator is used to define a module in NestJS. Modules are the basic building blocks of a NestJS application, organizing the application structure into cohesive blocks of functionality.
+
+## Application Controller and Service
+import { AppController } from './app.controller';
+Purpose: Defines the root controller which handles incoming requests and routes them to appropriate services or other controllers. It serves as the entry point for handling HTTP requests.
+
+import { AppService } from './app.service';
+Purpose: Contains the core business logic of the application. The root service that typically contains reusable business logic used across the application.
+
+## Feature Modules
+import { StudentModule } from './student/student.module';
+Purpose: A feature module encapsulating all student-related functionalities, including student entities, services, and controllers. Promotes modularity and separation of concerns within the application.
+
+import { AuthModule } from './auth/auth.module';
+Purpose: A feature module that handles authentication and authorization. This module includes logic for managing user registration, login, and securing routes with guards.
+
+## TypeORM Integration
+import { TypeOrmModule } from '@nestjs/typeorm';
+Purpose: Integrates TypeORM with the NestJS application, providing a powerful and flexible ORM framework for interacting with the database. It allows for defining and managing database entities and performing CRUD operations.
+
+import { Student } from './student/student.entity';
+Purpose: Defines the Student entity, representing the student table in the database. It includes the schema and any related logic for interacting with student records.
+
+import { User } from './auth/user.entity';
+Purpose: Defines the User entity, representing the user table in the database. It includes the schema and any related logic for interacting with user records, essential for authentication and authorization.
+
+## Authentication and Authorization
+import { PassportModule } from '@nestjs/passport';
+Purpose: Integrates Passport.js into the NestJS application, providing a robust and modular framework for implementing authentication strategies.
+
+import { JwtModule } from '@nestjs/jwt';
+Purpose: Provides JWT (JSON Web Token) functionalities, enabling the application to issue and verify tokens for secure authentication and authorization mechanisms.
 
 
