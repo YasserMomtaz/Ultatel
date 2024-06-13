@@ -1,8 +1,8 @@
 # Ultatel Task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+This project was generated with [AngularCLI] , And [NestJs]
 
-## Development server
+## Runing FrontEnd Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
@@ -23,11 +23,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Angular Core and Browser Modules
 NgModule  from '@angular/core';
-
 Purpose: Defines and decorates an Angular module. An Angular module consolidates a block of code with a related set of capabilities.
 
 BrowserModule from '@angular/platform-browser';
-
 Purpose: Necessary for launching and running an Angular application in the browser. It provides services essential to launch and run a browser app.
 
 ## Application Routing
@@ -37,8 +35,10 @@ Purpose: Manages the routing configuration for the application, including defini
 ## Application Components
 AppComponent  from './app.component';
 Purpose: The root component of the application, serving as the main entry point.
+
 RegisterComponent  from './register/register.component';
 Purpose: Handles user registration functionalities, providing a form for new users to create accounts.
+
 LoginComponent  from './login/login.component';
 Purpose: Manages user login functionalities, allowing existing users to log in to the application.
 
@@ -57,8 +57,10 @@ Purpose: Contains business logic related to user authentication, handling login 
 ## HTTP Interceptors
 HTTP_INTERCEPTORS, ɵHttpInterceptorHandler  from '@angular/common/http';
 Purpose: Provides infrastructure for intercepting HTTP requests and responses, allowing manipulation of HTTP traffic.
+
 InterceptorInterceptor  from './interceptors/interceptor.interceptor';
 Purpose: An HTTP interceptor for adding custom headers or modifying HTTP requests/responses.
+
 ErrorInterceptor  from './interceptors/ErrorInterceptor';
 Purpose: An HTTP interceptor for handling errors globally, capturing and managing HTTP errors across the application.
 
@@ -73,6 +75,73 @@ Purpose: A feature module that encapsulates student-related components, services
 ## Third-Party Modules
 NgxPaginationModule  from 'ngx-pagination';
 Purpose: A third-party module for handling pagination of lists, providing easy-to-use pagination controls.
+
 NgSelectModule  from '@ng-select/ng-select';
 Purpose: A third-party module for custom select components, allowing for enhanced select boxes with features like search and multiple selection.
+
+
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
+
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
+
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+
+
+## BackEnd Installation
+
+```bash
+$ npm install
+```
+
+## Running the BackEnd Server
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+## Test
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
+```
+
+## Technologies
+
+
 
